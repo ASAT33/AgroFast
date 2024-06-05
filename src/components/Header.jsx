@@ -15,8 +15,7 @@ export default function Header() {
           nav("/home");
         }}></img>
       <div className="header_search">
-        <input className="header_searchin" type="text"></input>
-        <SearchIcon className="header_searchicon"></SearchIcon>
+        
       </div>
       <div className="header_nav"></div>
       <div className="header_optionBasket">
@@ -28,8 +27,8 @@ export default function Header() {
         <span className="header_optionbasket_count">0</span>
       </div>
       <div className="header_option">
-        <span className="header_option_user">Hello Guest</span>
-        <span className="header_option_user">Sign in</span>
+        <span className="header_option_user">Bienvenido</span>
+        <span className="header_option_user">Log in</span>
       </div>
       <div className="header_option">
         <span className="header_option_orders">Returns &</span>
