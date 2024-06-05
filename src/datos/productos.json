@@ -5,7 +5,7 @@
     "image": "sacodenaranje.jpg",
     "Precio": "18.00",
     "Descripcion": "hola",
-    "temporada": "invierno"
+    "categoria": "fruta"
   },
   {
     "index": "1",
@@ -13,7 +13,7 @@
     "image": "tomate.jpg",
     "Precio": "3.00",
     "Descripcion": "El mejor tomate",
-    "temporada": "invierno"
+    "categoria": "legumbre"
   },
   {
     "index": "2",
@@ -21,7 +21,7 @@
     "image": "melon.jpg",
     "Precio": "13.00",
     "Descripcion": "",
-    "temporada": "invierno"
+    "categoria": "fruta"
   },
   {
     "index": "3",
@@ -29,7 +29,7 @@
     "image": "perejil.jpg",
     "Precio": "2.50",
     "Descripcion": "",
-    "temporada": "verano"
+    "categoria": "legumbre"
   },
   {
     "index": "4",
@@ -37,7 +37,7 @@
     "image": "guineo.jpg",
     "Precio": "4.00",
     "Descripcion": "",
-    "temporada": "siempre"
+    "categoria": "fruta"
   },
   {
     "index": "5",
@@ -45,6 +45,6 @@
     "image": "pinña.jpg",
     "Precio": "5.00",
     "Descripcion": "",
-    "temporada": "invierno"
+    "categoria": "fruta"
   }
 ]

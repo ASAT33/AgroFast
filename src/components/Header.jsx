@@ -1,7 +1,6 @@
 import React from "react";
 import "./Header.css";
-import { useNavigate } from "react-router-dom";
-import SearchIcon from "@mui/icons-material/Search";
+import { useNavigate, Link  } from "react-router-dom";
 import ShoppingBasketIcon from "@mui/icons-material/ShoppingBasket";
 
 export default function Header() {
@@ -20,15 +19,13 @@ export default function Header() {
       <div className="header_nav"></div>
       <div className="header_optionBasket">
         <ShoppingBasketIcon
-          className="header_shoppingicon"
-          onClick={() => {
-            nav("/carrito");
+          className="header_shoppingicon" onClick={() => { nav("/carrito");
           }}></ShoppingBasketIcon>
         <span className="header_optionbasket_count">0</span>
       </div>
       <div className="header_option">
         <span className="header_option_user">Bienvenido</span>
-        <span className="header_option_user">Log in</span>
+        <Link to="/login" className="header_option_user">Log in</Link>
       </div>
       <div className="header_option">
         <span className="header_option_orders">Returns &</span>

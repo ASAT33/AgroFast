@@ -6,11 +6,11 @@ import { Link } from "react-router-dom";
 function Products() {
   const [busqueda, setBusqueda] = useState("");
   const [orden, setOrden] = useState("default");
-  const [temporada, setTemporada] = useState("all");
+  const [categoria, setCategoria] = useState("all");
 
   const productosFiltrados = productos.filter(producto =>
     producto.title.toLowerCase().includes(busqueda.toLowerCase()) &&
-    (temporada === "all" || producto.temporada === temporada)
+    (categoria === "all" || producto.categoria === categoria)
   ).sort((a, b) => {
     if (orden === "menor_precio") {
       return parseFloat(a.Precio) - parseFloat(b.Precio);
@@ -38,12 +38,12 @@ function Products() {
             <option value="mayor_precio">Mayor precio</option>
           </select>
           
-          <label>Filtrar por temporada:</label>
-          <select value={temporada} onChange={(e) => setTemporada(e.target.value)}>
+          <label>Filtrar por Categoria:</label>
+          <select value={categoria} onChange={(e) => setCategoria(e.target.value)}>
             <option value="all">Todas</option>
-            <option value="invierno">Invierno</option>
-            <option value="verano">Verano</option>
-            <option value="siempre">Siempre</option>
+            <option value="fruta">Fruta</option>
+            <option value="legumbre">Legumbre</option>
+            <option value="granos">Granos</option>
           </select>
         </div>
       </div>

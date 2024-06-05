@@ -1,13 +1,99 @@
-.checkout{
+
+.carrito-container {
     display: flex;
-    padding: 20px;
-    background-color: white;
-    height: max-content;
+    width: 800px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+    margin: 20px auto;
 }
 
-.checkout_right{
-    margin-right: 10px;
-    padding: 10px;
-    border-bottom: 1px solid lightgray;
+.carrito {
+    flex: 2;
+    padding: 20px;
+    border-right: 1px solid #ddd;
+}
 
+.carrito-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.carrito-image {
+    width: 80px;
+    height: 80px;
+    background-color: #eaeaea;
+    margin-right: 20px;
+    border-radius: 4px;
+}
+
+.carrito-details {
+    flex: 1;
+}
+
+.carrito-name, .carrito-extra, .carrito-price, .carrito-stock {
+    margin: 5px 0;
+}
+
+.carrito-price {
+    font-weight: bold;
+}
+
+.carrito-stock {
+    color: green;
+}
+
+.carrito-quantity {
+    display: flex;
+    align-items: center;
+}
+
+.carrito-quantity select {
+    margin-right: 10px;
+    padding: 5px;
+}
+
+.carrito-remove {
+    background-color: #000000;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.carrito-remove:hover {
+    color: red;
+    background-color: #000000;
+}
+
+.carrito-resumen {
+    flex: 1;
+    padding: 20px;
+}
+
+.carrito-resumen div {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.carrito-total {
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+.carrito-checkout-button {
+    width: 100%;
+    padding: 10px;
+    background-color: #a78d63;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 4px;
+}
+
+.carrito-checkout-button:hover {
+    background-color: #c4ac85;
 }
