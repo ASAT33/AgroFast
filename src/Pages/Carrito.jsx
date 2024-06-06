@@ -11,6 +11,7 @@ const Carrito = () => {
   return (
     <div className="carrito-container">
       <div className="carrito">
+      <h1>Carrito</h1>
         {productos.map(producto => (
           <div className="carrito-item" key={producto.id}>
             <div className="carrito-image"></div>

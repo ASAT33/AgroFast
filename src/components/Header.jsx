@@ -24,8 +24,8 @@ export default function Header() {
         <span className="header_optionbasket_count">0</span>
       </div>
       <div className="header_option">
-        <span className="header_option_user">Bienvenido</span>
-        <Link to="/login" className="header_option_user">Log in</Link>
+      <Link to="/register" className="header_option_user">Registro</Link>
+        <Link to="/login" className="header_option_user">Iniciar Sesion</Link>
       </div>
       <div className="header_option">
         <span className="header_option_orders">Returns &</span>

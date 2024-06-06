@@ -6,6 +6,7 @@ import Carrito from "./Pages/Carrito";
 import VistaProducto from "./Pages/VistaProducto";
 import Sidebar from "./components/Sidebar";
 import Login from "./Pages/Login";
+import Register from "./Pages/Register";
 function App() {
   return (
     <>
@@ -17,6 +18,7 @@ function App() {
           <Route path="/carrito" element={<Carrito />}></Route>
           <Route path="/producto/:index" element={<VistaProducto />} />
           <Route path="/login" element={<Login />}></Route>
+          <Route path="/register" element={<Register />}></Route>
         </Routes>
       </BrowserRouter>
       

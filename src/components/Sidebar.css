@@ -11,7 +11,12 @@
     flex-direction: column;
     align-items: flex-start;
     font-family: Arial, sans-serif;
-    margin-top: 70px; 
+    margin-top: 70px;
+    transition: width 0.3s ease-in-out;
+}
+
+.closed {
+    width: 30px; 
 }
 
 .menu-item {
@@ -31,7 +36,15 @@
     margin-right: 10px;
 }
 
-/* formitas */
+.toggle-btn {
+    cursor: pointer;
+    padding: 10px;
+}
+
+.menu-icon::before {
+    content: "\2630"; 
+  }
+
 .user-icon::before {
     content: "\1F464"; 
 }
@@ -80,3 +93,9 @@
     font-size: 24px;
     margin-right: 10px;
 }
+
+.sidebar-links {
+    text-decoration: none;
+    color: #000000;
+}
+

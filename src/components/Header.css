@@ -44,6 +44,7 @@
    color:#67472e;
    font-size: 15px;
    font-weight: 800;
+   text-decoration: none;
 }
 .header_option_orders{
     display:flex;
